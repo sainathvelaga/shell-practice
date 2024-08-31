@@ -20,16 +20,16 @@ fi
 VALIDATE() {
     if [ $1 -ne 0 ]
     then
-        echo -e "$2 is $R FAILURE"
+        echo -e " $2 is $R FAILURE $N "
     else
-        echo -e "$2 is $G Success"
+        echo -e " $2 is $G Success $N "
     fi
 }
 
 for i in $@
 do
 {
-    echo "package to be installed :$i"
+    echo "package to be installed : $i"
     dnf list installed $i &>>$LOGFILE
     if [ $? -eq 0 ]
     then
