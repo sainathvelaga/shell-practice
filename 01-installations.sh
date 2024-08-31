@@ -23,6 +23,7 @@ VALIDATE() {
         echo -e "$2 is $R FAILURE"
     else
         echo -e "$2 is $G Success"
+    fi
 }
 
 for i in $@
