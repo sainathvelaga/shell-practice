@@ -18,13 +18,11 @@ else
 fi
 
 VALIDATE() {
-
     if [ $1 -ne 0 ]
     then
         echo -e "$2 is $R FAILURE"
     else
         echo -e "$2 is $G Success"
-
 }
 
 for i in $@
