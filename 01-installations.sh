@@ -14,7 +14,7 @@ then
     echo -e " $R not a root user, please run with root user $N "
     exit 1
 else
-    echo "starting the script"
+    echo -e " $G starting the script $N"
 fi
 
 VALIDATE() {
